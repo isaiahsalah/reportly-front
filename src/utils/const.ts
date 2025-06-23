@@ -43,6 +43,6 @@ export const menuData = {
 };
 
 export const typeSearch = [
-  {id: 1, name: "Siguiente"},
-  {id: 2, name: "Anterior"},
+  {id: 1, name: "Proceso Siguiente"},
+  {id: 2, name: "Proceso Anterior"},
 ];
