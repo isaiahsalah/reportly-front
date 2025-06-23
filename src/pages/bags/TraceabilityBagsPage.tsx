@@ -16,11 +16,7 @@ import {Search} from "lucide-react";
 import {useState} from "react";
 import {format} from "date-fns";
 import TableSkeleton from "@/components/skeletons/SkeTable";
-
-const typeSearch = [
-  {id: 1, name: "Siguiente"},
-  {id: 2, name: "Anterior"},
-];
+import {typeSearch} from "@/utils/const";
 
 const TraceabilityBagsPage = () => {
   const [loading, setLoading] = useState(false);
@@ -47,7 +43,7 @@ const TraceabilityBagsPage = () => {
   // Generar columnas dinámicamente
   const columns: ColumnDef<ITraceability>[] = [
     {
-      accessorFn: (row) => format(new Date(row.date as Date), "dd/MM/yyyy").trim(),
+      accessorFn: (row) => format(new Date(row.date as unknown as string), "dd/MM/yyyy").trim(),
 
       header: "Fecha",
       cell: (info) => {
