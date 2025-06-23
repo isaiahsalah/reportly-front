@@ -17,7 +17,7 @@ function App() {
           <SidebarInset>
             <Header />
             <div className=" @container/main  flex flex-1 flex-col gap-4 p-4 ">
-              <main>
+              <main className="  h-full">
                 <Routes>
                   <Route path="/bags/traceability" element={<TraceabilityBagsPage />} />
                   <Route path="/thermo/traceability" element={<TraceabilityThermoPage />} />
