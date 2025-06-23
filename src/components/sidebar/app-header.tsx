@@ -1,12 +1,9 @@
 import {Separator} from "@radix-ui/react-separator";
-import {useLocation} from "react-router-dom";
 
 import {SidebarTrigger} from "../ui/sidebar";
 import {ModeToggle} from "./mode-toggle";
 
 const Header = () => {
-  const location = useLocation();
-
   //const currentPath = location.pathname.replace(/^\/|\/$/g, "");
 
   return (
